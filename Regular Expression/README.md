@@ -43,6 +43,26 @@ ex) ca{2,5}t : caat, caaat, caaaat, caaaaat
 
 ---
 
+### [골드5] #1013 (https://www.acmicpc.net/problem/1013)
+
+> 특정한 패턴이 주어졌을 때, 문자열이 패턴에 일치하는지 검사하는 문제이다.
+> 
+* **문제 해결 알고리즘 : ```정규표현식```**
+
+`re.fullmatch()` 를 사용하면, 바로 풀리는 문제이다.
+
+---
+
+### [실버3] #9996 (https://www.acmicpc.net/problem/9996)
+
+> 특정한 패턴이 주어졌을 때, 그 패턴과 일치하는 문자열을 찾는 문제이다.
+
+* **문제 해결 알고리즘 : ```정규표현식```**
+
+COMMENT : `^` , `$` 는 각각, 시작, 끝에 와야만 하는 것을 매치한다.
+
+---
+
 ### [실버4] #5637 (https://www.acmicpc.net/problem/5637)
 
 > 주어진 문장에서, 알파벳과 하이픈으로만 이루어진 단어 중 가장 길이가 긴 단어를 찾는 문제이다.
@@ -51,7 +71,6 @@ ex) ca{2,5}t : caat, caaat, caaaat, caaaaat
 
 `re.findall(regex, string)` 을 이용하여, 해결 가능했다.    
 regex는, `r'[a-zA-Z-]+'` 로 구성했다.
-
 
 ---
 
