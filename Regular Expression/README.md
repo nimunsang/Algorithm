@@ -43,6 +43,18 @@ ex) ca{2,5}t : caat, caaat, caaaat, caaaaat
 
 ---
 
+### [실버4] #5637 (https://www.acmicpc.net/problem/5637)
+
+> 주어진 문장에서, 알파벳과 하이픈으로만 이루어진 단어 중 가장 길이가 긴 단어를 찾는 문제이다.
+
+* **문제 해결 알고리즘 : ```정규표현식```**
+
+`re.findall(regex, string)` 을 이용하여, 해결 가능했다.    
+regex는, `r'[a-zA-Z-]+'` 로 구성했다.
+
+
+---
+
 ### [실버5] #14405 (https://www.acmicpc.net/problem/14405)
 
 > 문자열을, 주어진 문자열로만으로 표현할 수 있는가 묻는 문제이다.
