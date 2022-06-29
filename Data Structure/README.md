@@ -14,7 +14,7 @@
 (루트 노드 삭제 후, 말단 노드를 루트 노드로 설정 후, heapify 과정)   
 모두 **트리의 높이**만큼 작업이 이루어지므로, O(logN) 의 시간이 소요된다.    
 
-(참고) <a href=../Algorithm/Sort/README.md>Heap Sort</a>
+(참고) <a href=../Algorithm/Sort>Heap Sort</a>
 
 ---
 
