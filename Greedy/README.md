@@ -1,6 +1,4 @@
-# Greedy 
-
----
+# Greedy
 
 ### [실버1] #1946(https://www.acmicpc.net/problem/1946)
 

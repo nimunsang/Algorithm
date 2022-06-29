@@ -1,7 +1,5 @@
 # Sorting Algorithm
 
----
-
 ### Heap Sort
 
 Heap Sort는 추가적인 배열을 사용하지 않고 O(NlogN)에 수행 가능하다.

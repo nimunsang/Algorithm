@@ -1,7 +1,5 @@
 # BFS ( Breadth-First Search )
 
----
-
 ### [실버1] #9205 (https://www.acmicpc.net/problem/9205)
 
 > 간단한 조건을 가진 BFS 문제이다.
