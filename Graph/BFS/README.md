@@ -1,5 +1,11 @@
 # BFS ( Breadth-First Search )
 
+### [골드5] #5014 (https://www.acmicpc.net/problem/5014)
+
+> 엘리베이터를 타고 특정 층으로 갈 수 있는 최소 경로를 구하는 BFS 문제이다.
+
+* **문제 해결 알고리즘 : ```BFS```**
+
 ### [실버1] #9205 (https://www.acmicpc.net/problem/9205)
 
 > 간단한 조건을 가진 BFS 문제이다.
