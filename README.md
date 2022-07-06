@@ -4,23 +4,9 @@
 
 - ### Divide and Conquer
 
-- ### String
-
-- ### Greedy
-
 - ### Dynamic Programming
 
-- ### SORT
-  * <a href="#Bubble Sort">Bubble Sort </a> 
-  * selection Sort  
-  * Insertion Sort  
-  * Merge Sort  
-  * Heap Sort  
-  * Quick Sort  
-  * Counting Sort
-  * Radix Sort
-
-- ### GRAPH
+- ### Graph
   * BFS
   * DFS
   * Dijkstra
@@ -29,6 +15,19 @@
   * Kruskal
   * Prim
 
-<br>
 
-- ### <class id="Bubble Sort">  Bubble Sort</class>
+- ### Greedy
+
+- ### String
+
+- ### Sort
+  * Bubble Sort 
+  * Selection Sort  
+  * Insertion Sort  
+  * Merge Sort  
+  * Heap Sort  
+  * Quick Sort  
+  * Counting Sort
+  * Radix Sort
+
+
