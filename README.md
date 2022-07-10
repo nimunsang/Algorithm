@@ -1,6 +1,11 @@
 # ALGORITHM
 
+
+
 - ### Binary Search
+
+- ### Data Structure
+  * Binary Search Tree
 
 - ### Divide and Conquer
 
