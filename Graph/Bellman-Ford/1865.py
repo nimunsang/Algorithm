@@ -1,12 +1,9 @@
-from collections import deque
 import sys
 input = sys.stdin.readline
-
-
 INF = 10**9
-def bellman_ford(start):
+
+def Bellman_Ford():
     dist = [INF] * (N+1)
-    dist[start] = 0
     for i in range(N):
         for v, next_v, cost in graph:
             if dist[next_v] > dist[v] + cost:
@@ -29,4 +26,6 @@ for _ in range(TC):
         S, E, T = map(int, input().split())
         graph.append((S, E, -T))
 
-    print("YES" if bellman_ford(1) else "NO")
+    negative_cycle = Bellman_Ford()
+
+    print("YES" if negative_cycle else "NO")
