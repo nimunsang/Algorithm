@@ -1,7 +1,5 @@
 # ALGORITHM
 
-
-
 - ### Binary Search
 
 - ### Data Structure
@@ -19,8 +17,8 @@
   * Floyd-Warshall
   * Kruskal
   * Prim
-
-
+  * TSP (Traveling Salesman Problem)
+  
 - ### Greedy
 
 - ### String
@@ -34,5 +32,6 @@
   * Quick Sort  
   * Counting Sort
   * Radix Sort
+  * Topology Sort
 
 
