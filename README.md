@@ -4,6 +4,11 @@
 
 - ### Data Structure
   * Binary Search Tree
+  * Stack
+  * Priority Queue
+  * Queue
+  * Linkedlist
+  * Disjoint Set
 
 - ### Divide and Conquer
 
