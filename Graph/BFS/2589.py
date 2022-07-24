@@ -37,4 +37,3 @@ for i in range(N):
 
 print(answer)
 
-
