@@ -15,7 +15,7 @@
 * ### Kruskal Algorithm
 
   * **Greedy Algorithm**과, **Union-Find Algorithm**을 기초로 함
-  * O(ElogE)
+  * O(ElogV)
 
   * #### 구현
     1. 모든 정점을 독립적인 집합으로 만든다.
@@ -41,7 +41,7 @@
 
   * 시작 정점을 선택한 후, 정점에 인접한 간선 중 최소 간선으로 연결된 정점을 선택
   * 해당 정점에서 다시 최소 간선으로 연결된 정점을 선택하는 방식
-  * O(ElogE)
+  * **O(V<sup>2</sup>)** -> 피보나치 힙으로 개선 : **O(ElogV)**
   * #### 구현
     1. 임의의 정점을 선택, '연결된 노드 집합'에 삽입
     2. 선택된 정점에 연결된 간선들을 간선 리스트에 삽입
@@ -53,10 +53,49 @@
 
 
 * ### Prim vs Kruskal
-  * 두 알고리즘 모두, Greedy Algorithm을 기초로 한다.
-  * Kruskal은 가장 가중치가 작은 간선부터 선택하면서 MST를 구함 (정렬 우선)
-  * Prim은 특정 정점에서 시작, 해당 정점에 연결된 가장 가중치가 작은 간선을 선택 (heap 사용)
+  * 두 알고리즘 모두, **Greedy Algorithm**을 기초로 한다.
+  * 간선 선택
+    * Kruskal : **가장 가중치가 작은 간선부터** 선택하면서 MST를 구함 (정렬 우선)
+    * Prim : **특정 정점에서 시작**하여, 해당 정점에 연결된 가장 가중치가 작은 간선을 선택 (heap 사용)
+  * 노드 방문
+    * Kruskal : 노드를 한번씩만 방문
+    * Prim : 노드를 한번 이상씩 방문
+  * 시간복잡도
+    * Kruskal : O(ElogE)
+    * Prim : O(V<sup>2</sup>)
+    * Improved Prim : O(E + VlogV)
+  * 연결 그래프
+    * Kruskal : 연결되지 않은 성분에서도 작동.
+    * Prim : 연결 그래프에서만 작동.
+  * 수행 시간
+    * Kruskal : sparse graph에서 유리
+    * Prim : dense graph에서 유리
+  * 적용
+    * Kruskal : LAN connection, TV Network
+    * Prim : Traveling Salesman Problem
+  * 자료 구조
+    * Kruskal : Heap, Disjoint Set
+    * Prim : List, Heap
+    
+---
 
+### [골드3] #14621 (https://www.acmicpc.net/problem/14621)
+
+> node끼리 연결하는 조건이 있는 graph에서, MST를 구할수 있는지 판별하고, 값을 구하는 문제이다.
+
+* **문제 해결 알고리즘 : ```Kruskal```**
+* Kruskal을 사용한 이유
+  * sparse graph
+  * 가중치가 다른 중복된 간선이 있을 수 있다. 즉, PRIM을 사용한다면, 인접 행렬로 구현해야 함.
+
+---
+
+### [골드4] #16398 (https://www.acmicpc.net/problem/16398)
+
+> 인접 행렬에 가중치가 주어졌을 때, MST를 구하는 문제이다.
+
+* **문제 해결 알고리즘 : ```Kruskal```, ```Prim```**
+* Kruskal의 복잡도는 O(ElogE), Prim의 복잡도는 O(ElogV)
 
 ---
 
