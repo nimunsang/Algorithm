@@ -86,17 +86,50 @@
 
 * 공통 원소가 없는 서로소 집합들로 나눠진 원소들에 대한 정보를 저장하는 자료구조
 * **Union-Find** 기법으로 구현 가능하다
-* 적용
-  * 네트워크 연결 구조
-  * Lowest Common Ancestor
-  * Kruskal Algorithm
-* Union-Find의 최적화
-  * Path-Compression (경로 압축)
-    ```
-      def find(x):
-         if parent[x] != x:
+
+
+* ### Union-Find Algorithm
+  * Disjoint Set을 표현할 때 사용하는 알고리즘으로, 트리 구조를 활용
+  * 노드들 중에 연결된 노드를 찾거나, 노드들을 서로 연결할 때 사용
+  * 적용
+    * 네트워크 연결 구조
+    * Lowest Common Ancestor
+    * Kruskal Algorithm
+* 최적화 
+  * Union 순서에 따라, 최악의 경우 링크드 리스트와 같은 형태가 될 수 있다.
+  * 이 경우, O(N)이 될 수 있으므로, **Union-by-rank**, **Path Compression** 기법 사용
+  
+  #### Union-by-rank
+    * 각 트리에 대해 높이(rank)를 기억한다.
+    * Union시 두 트리의 높이(rank)가 다르면, 높이가 작은 트리를 높이가 큰 트리에 붙인다.
+    * 높이가 h-1인 두 개의 트리를 합칠 때는, 한 쪽의 트리 높이를 1 증가시키고, 다른 트리를 해당 트리에 붙인다.
+    * Union-by-rank를 통해, **O(logN)** 으로 Union-Find 연산 가능
+  #### Path-Compression (경로 압축)
+    * Find를 실행한 노드에서 거쳐간 노드를 루트에 직접 연결하는 기법
+    * Find를 실행한 노드는 이후부터는 루트 노드를 한번에 알 수 있다.
+    
+    ```python
+  
+    def find(x):
+        if parent[x] != x:
             parent[x] = find(parent[x])  # 메모이제이션
-         return parent[x]
+        return parent[x]
+  
+    def union(node_a, node_b):
+        root1 = find(node_a)
+        root2 = find(node_b)
+        
+        if rank[root1] > rank[root2]:
+            parent[root2] = root1
+        else:
+            parent[root1] = root2
+            if rank[root1] == rank[root2]:
+               rank[root2] += 1
+    
+    def make_set(node):
+        parent[node] = node
+        rank[node] = 0
+  
     ```
 
 ---
