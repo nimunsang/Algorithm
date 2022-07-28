@@ -9,6 +9,7 @@
   * Queue
   * Linkedlist
   * Disjoint Set
+    * Union-Find
 
 - ### Divide and Conquer
 
@@ -20,10 +21,19 @@
   * Dijkstra
   * Bellman-ford
   * Floyd-Warshall
-  * Kruskal
-  * Prim
   * TSP (Traveling Salesman Problem)
-  
+
+- ### Tree
+  * Minimum Spanning Tree
+    * Kruskal
+      * Greedy
+      * Sort
+      * Union-Find
+    * Prim
+      * Greedy
+      * Priority-Queue
+      
+
 - ### Greedy
 
 - ### String
