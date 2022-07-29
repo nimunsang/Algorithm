@@ -1,5 +1,13 @@
 # BFS ( Breadth-First Search )
 
+### [골드3] #6087 (https://www.acmicpc.net/problem/6087)
+
+> board에서 시작점부터 끝점까지 경로 중 가장 적게 90도로 꺾이는 경로에서 꺾인 횟수를 구하는 문제이다.
+
+* **문제 해결 알고리즘 : ```BFS```**
+
+--
+
 ### [골드5] #2589 (https://www.acmicpc.net/problem/2589)
 
 > board에서 bfs를 써서 시작점부터 끝점까지 최대 길이를 구하는 문제이다.
