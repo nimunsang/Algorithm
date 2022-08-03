@@ -44,3 +44,20 @@
 
 ---
 
+### [골드5] #17396 (https://www.acmicpc.net/problem/17396)
+
+> 시작 정점부터 마지막 정점까지 최단 거리를 구하는 문제였다.
+
+* **문제 해결 알고리즘 : ```Dijkstra```**
+* 여러 번 틀린 이유 
+```
+      while heap:
+        d, v = heapq.heappop(heap)
+        **if dist[v] < d:
+            continue**
+  ```
+
+* **입력으로 주어진 길이가 지금까지의 길이보다 클 경우, continue하는 조건을 반드시 달아주자.**
+
+---
+
