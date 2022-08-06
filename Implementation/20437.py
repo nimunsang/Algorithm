@@ -16,7 +16,6 @@ for _ in range(T):
         print(-1)
         continue
 
-
     ans1, ans2 = float('inf'), 0
     for lst in dic.values():
         for i in range(0, len(lst)-K+1):
